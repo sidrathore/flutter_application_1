@@ -46,12 +46,17 @@ class LoginPage extends StatelessWidget {
                 SizedBox(
                   height: 5,
                 ),
-                Text(
-                  'Sign up',
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 235, 52, 39),
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500),
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, 'signUpPage');
+                  },
+                  child: Text(
+                    'Sign up',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 235, 52, 39),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
                 SizedBox(
                   height: 50,
