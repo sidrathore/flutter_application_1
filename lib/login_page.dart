@@ -33,14 +33,14 @@ class LoginPage extends StatelessWidget {
                       print(value);
                     },
                     decoration: InputDecoration(
-                       hintText: 'Enter Number here...',
-                       hintStyle: TextStyle(color: Colors.grey,fontSize: 20),
-                       fillColor: Colors.white,
-                       filled: true,
+                        hintText: 'Enter Number here...',
+                        hintStyle: TextStyle(color: Colors.grey, fontSize: 20),
+                        fillColor: Colors.white,
+                        filled: true,
                         border: OutlineInputBorder(
-                      borderSide: BorderSide(
-                          width: 5, color: Color.fromARGB(255, 28, 66, 30)),
-                    )),
+                          borderSide: BorderSide(
+                              width: 5, color: Color.fromARGB(255, 28, 66, 30)),
+                        )),
                   ),
                 ),
                 SizedBox(
@@ -57,7 +57,9 @@ class LoginPage extends StatelessWidget {
                   height: 50,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, 'otpPage');
+                  },
                   child: Container(
                     decoration: BoxDecoration(
                       color: Color.fromARGB(255, 50, 123, 53),
